@@ -78,10 +78,8 @@ Hyperparameter tuning provided only a small and statistically insignificant impr
 - Expected Goals (xG)  
 - More advanced team strength metrics
 
-**Potential applications**  
-- Betting probability estimates  
-- Fantasy football support  
-- Broadcast analytics
+**Hyperparameter Tuning**  
+- Further refine key Random Forest parameters (e.g., number of trees and tree depth)
 
 ## 7. Conclusion
 
