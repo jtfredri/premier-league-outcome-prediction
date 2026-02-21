@@ -12,7 +12,7 @@ The model is trained on historical seasons and evaluated on the most recent seas
 The dataset contains 4,440 matches with team, match, and performance statistics.
 
 **Target variable**  
-- `FTR` — Full-Time Result (H, D, A)
+- FTR — Full-Time Result (H, D, A)
 
 **Main features**  
 - Elo ratings (team strength)  
