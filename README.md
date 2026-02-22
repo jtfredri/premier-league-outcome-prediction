@@ -34,13 +34,13 @@ These findings guided feature selection.
 A Random Forest classifier was used due to the moderate dataset size and strong tabular performance.
 
 **Training setup**  
-- Train: first 11 seasons  
+- Train: 2014/15 - 2024/25 seasons 
 - Test: 2025/26 season  
 - Initial estimators: 100
 
 **Baseline performance**  
 - Accuracy: 63%  
-- Baseline accuracy (most frequent class): 45%
+- Baseline accuracy: 45%
 
 The model predicts home and away wins reasonably well but struggles with draws.
 
@@ -67,9 +67,8 @@ The model predicts home and away wins reasonably well but struggles with draws.
 
 **Test performance after tuning**  
 - Accuracy: 0.64  
-- Macro F1: 0.58
 
-Hyperparameter tuning provided only a small and statistically insignificant improvement, suggesting that the model is close to its performance ceiling given the current feature set.
+Hyperparameter tuning provided only a small improvement, suggesting that the model is close to its performance ceiling given the current feature set.
 
 ## 6. Future Improvements
 
