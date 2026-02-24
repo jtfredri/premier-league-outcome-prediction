@@ -27,11 +27,10 @@ The dataset contains 4,440 matches with team, match, and performance statistics.
 - Away teams conceding more goals increases home win probability.  
 - More rest days generally improves performance.
 
-These findings guided feature selection.
 
 ## 4. Model
 
-A Random Forest classifier was used due to the moderate dataset size and strong tabular performance.
+A Random Forest classifier was used due to the moderate dataset size
 
 **Training setup**  
 - Train: 2014/15 - 2024/25 seasons 
@@ -63,8 +62,6 @@ The model predicts home and away wins reasonably well but struggles with draws.
 - `bootstrap`: True  
 - `class_weight`: None
 
-**Best CV score:** 0.668
-
 **Test performance after tuning**  
 - Accuracy: 0.64  
 
@@ -82,8 +79,8 @@ Hyperparameter tuning provided only a small improvement, suggesting that the mod
 
 ## 7. Conclusion
 
-The project demonstrates that machine learning can meaningfully predict Premier League outcomes. The baseline Random Forest model achieved 63% accuracy, outperforming a naive prediction strategy. After tuning, the model reached ~64% accuracy, which see only a marginal improvement.
+The project demonstrates that machine learning can meaningfully predict Premier League outcomes. The baseline Random Forest model achieved 63% accuracy, outperforming the baseline prediction strategy. After tuning, the model reached 64% accuracy, which is only a marginal improvement.
 
-This limited gain is expected because Random Forest is already a strong model for tabular data, and predictive performance in football is often constrained more by feature quality than by model complexity. With the current features, the model appears to have extracted most of the available signal.
+This limited gain is expected because Random Forest is already a strong model for the given data, and predictive performance in football is often constrained more by feature quality than by model complexity. With the current features, the model appears to have extracted most of the available signal.
 
 Further improvements are therefore more likely to come from enhanced feature engineering (e.g., injuries, xG, or richer team strength metrics) rather than from additional model tuning or complexity.
